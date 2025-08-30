@@ -1,0 +1,110 @@
+.ADD {
+    height: 709px;
+    background-color: #72676f;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    left: 340px;
+    top: 193px;
+}
+
+.left img {
+    width: 180px;
+    display: block;
+    border-radius: 10px;
+    -webkit-box-shadow: 13px 8px 21px 1px rgba(0, 0, 0, 0.51);
+    -moz-box-shadow: 13px 8px 21px 1px rgba(0, 0, 0, 0.51);
+    box-shadow: 13px 8px 21px 1px rgba(0, 0, 0, 0.51);
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    left: 600px;
+    top: 193px;
+    gap: 40px;
+}
+
+.right input {
+    width: 220px;
+    height: 35px;
+    border: 2px solid #b79d9b;
+    border-radius: 10px;
+    padding: 10px 25px;
+    background: transparent;
+    color: white;
+    background-color: #190019;
+    transition: 0.2s;
+    -webkit-box-shadow: 13px 8px 21px 1px rgba(0, 0, 0, 0.51);
+    -moz-box-shadow: 13px 8px 21px 1px rgba(0, 0, 0, 0.51);
+    box-shadow: 13px 8px 21px 1px rgba(0, 0, 0, 0.51);
+}
+
+.right input:focus {
+    /* box-shadow: 2px 2px 15px #854f6c inset; */
+    border-color: #000000;
+    border: 3px solid #000000;
+    box-shadow:
+        0 0 5px #000000,
+        0 0 15px #000000,
+        0 0 30px #000000,
+        inset 0 0 10px #000000;
+}
+
+.down {
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    margin-bottom: 140px;
+    gap: 200px;
+}
+
+.down button {
+    display: flex;
+    width: 140px;
+    height: 45px;
+    border-radius: 15px;
+    text-decoration: none;
+    color: #e1cbd7;
+    background-color: #30333a;
+    transition: 0.5s;
+    border: 2px solid;
+    align-items: center;
+    justify-content: center;
+}
+
+.down button:hover {
+    color: white;
+    transform: scale(1.1);
+    background-color: #5296ce !important;
+}
+
+
+.down a {
+    display: flex;
+    width: 140px;
+    height: 45px;
+    border-radius: 15px;
+    text-decoration: none;
+    color: #e1cbd7;
+    background-color: #30333a;
+    transition: 0.5s;
+    border: 2px solid;
+    align-items: center;
+    justify-content: center;
+}
+
+.down a:hover {
+    color: #fe8492;
+    transform: scale(1.1);
+    background-color: #221620 !important;
+}
