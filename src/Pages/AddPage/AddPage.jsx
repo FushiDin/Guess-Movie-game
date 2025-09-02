@@ -1,12 +1,21 @@
 import { Link } from 'react-router-dom';
 import styles from './AddPage.module.css'
-import { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { getFilmsList } from './service/service';
+import { useSelector } from 'react-redux';
 
-function AddPage() {
-    // const List = useSelector(
-    //     (state) => state.filmsReducerServis.ListPage
-    // );
+function AddPage({ store }) {
+
+    const [name, setName] = useState;
+    const [desc, setDesc] = useState;
+
+    const FilmList = useSelector(
+        (state) => state.FilmsReduserService.ListPage
+    );
+
+    const useRefName = React.useRef()
+    const useRefDescriotin = React.useRef()
+
 
     useEffect(() => {
         getFilmsList()
@@ -20,15 +29,22 @@ function AddPage() {
             </div>
 
             <div className={styles.right}>
-                <input type="text" placeholder='Названия Фильма...' />
-                <input type="text" placeholder='Описания фильма...' />
+                <input
+                    type="text"
+                    placeholder='Названия Фильма...'
+                    ref={useRefName}
+                />
+                <input
+                    type="text"
+                    placeholder='Описания фильма...'
+                    ref={useRefDescriotin}
+                />
             </div>
 
             <div className={styles.down}>
                 <Link to={'/game'}>Назад</Link>
                 <button>Добавить фильм</button>
             </div>
-
         </div>
     )
 }
