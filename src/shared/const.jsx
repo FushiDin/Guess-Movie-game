@@ -1,1 +1,1 @@
-export const  BaseURL = "http://localhost:8080/films"
+export const BaseURL = "http://localhost:8080/"
