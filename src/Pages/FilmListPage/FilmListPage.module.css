@@ -1,0 +1,75 @@
+.List {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #0c969c;
+    min-height: 100vh;
+}
+
+.filmItems {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 450px;
+}
+
+.filmName {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    font-size: 25px;
+    padding-left: 50px;
+    height: 40px;
+    width: 900px;
+    background-color: #274d6076;
+    border-radius: 10px;
+}
+
+.but a {
+    display: block;
+    background-color: #561c24;
+    transition: 0.5s;
+    width: 100px;
+    height: 30px;
+    padding-top: 3px;
+    margin-top: -550px;
+    margin-left: 1390px;
+    border-radius: 100px;
+    text-decoration: none;
+    color: white;
+    border: 2px solid;
+    position: fixed;
+}
+
+.but a:hover {
+    color: black;
+    transform: scale(1.1);
+    background-color: #991022 !important;
+}
+
+.moreBut {
+    padding-left: 15px;
+}
+
+.moreBut a {
+    width: 140px;
+    height: 30px;
+    border: 3px solid #031716;
+    border-radius: 10px;
+    transition: all 0.3s;
+    cursor: pointer;
+    background: white;
+    font-size: 14px;
+    font-weight: 450;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+}
+
+.moreBut a:hover {
+    background: #6ba3be;
+    color: #ffff;
+    font-size: 16px;
+}

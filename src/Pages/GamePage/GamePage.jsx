@@ -22,6 +22,10 @@ function GamePage() {
                 <button>Ответить</button>
             </div>
 
+            <div className={styles.ListBut}>
+                <Link to={'/list'}>Список фильмов</Link>
+            </div>
+
         </div>
     )
 }

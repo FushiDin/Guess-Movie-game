@@ -1,0 +1,49 @@
+.NameDesc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    min-height: 100vh;
+    color: #e7dbef;
+    background-color: #a56abdd3;
+}
+
+.NameDesc h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    font-size: 50px;
+    background-color: #49225b;
+    border-radius: 17px;
+}
+
+.NameDesc p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    background-color: #49225b;
+    width: 900px;
+    border-radius: 17px;
+    height: 130px;
+}
+
+.NameDesc a {
+    display: block;
+    background-color: #49225b;
+    transition: 0.5s;
+    width: 300px;
+    height: 40px;
+    padding-top: 10px;
+    border-radius: 100px;
+    text-decoration: none;
+    color: #e7dbef;
+    border: 2px solid;
+}
+
+.NameDesc a:hover {
+    color: #f5ebfa;
+    transform: scale(1.1);
+    background-color: #6e3482 !important;
+}

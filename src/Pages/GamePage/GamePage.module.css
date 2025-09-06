@@ -173,3 +173,28 @@
     -moz-box-shadow: 13px 8px 21px 1px rgba(0, 0, 0, 0.51);
     box-shadow: 13px 8px 21px 1px rgba(0, 0, 0, 0.51);
 }
+
+.ListBut {
+    position: absolute;
+    left: 1357px;
+    top: 660px;
+}
+
+.ListBut a {
+    display: block;
+    background-color: #071739;
+    transition: 0.5s;
+    width: 150px;
+    height: 33px;
+    padding-top: 7px;
+    border-radius: 100px;
+    text-decoration: none;
+    color: white;
+    border: 2px solid;
+}
+
+.ListBut a:hover {
+    color: black;
+    transform: scale(1.1);
+    background-color: #4b6382 !important;
+}
