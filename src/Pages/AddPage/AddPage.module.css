@@ -50,7 +50,6 @@
 }
 
 .right input:focus {
-    /* box-shadow: 2px 2px 15px #854f6c inset; */
     border-color: #000000;
     border: 3px solid #000000;
     box-shadow:

@@ -32,13 +32,11 @@
     width: 100px;
     height: 30px;
     padding-top: 3px;
-    margin-top: -550px;
-    margin-left: 1390px;
+    margin-left: 1380px;
     border-radius: 100px;
     text-decoration: none;
     color: white;
     border: 2px solid;
-    position: fixed;
 }
 
 .but a:hover {
