@@ -14,7 +14,7 @@ const ModalDelete  = ({name, id, visible, onCenel }) => {
 
     return(
         <div className={visible ? styles.visible: styles.notVisible}>
-            <h3>Удаление карточки{name}</h3>
+            <h3>Удаление фильма {name}</h3>
             <p>Вы увереный удалить фильм {name} ?</p>
             <div>
                 <button onClick={onCenel}>Отмена</button>

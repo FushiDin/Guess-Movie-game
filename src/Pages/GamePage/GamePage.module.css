@@ -159,6 +159,34 @@
     font-size: 18px;
 }
 
+
+.right button {
+    width: 240px;
+    height: 50px;
+    border: 3px solid #1d1a39;
+    border-radius: 20px;
+    transition: all 0.3s;
+    cursor: pointer;
+    background: white;
+    font-size: 14px;
+    font-weight: 450;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #124d3d;
+    -webkit-box-shadow: 13px 8px 21px 1px rgba(0, 0, 0, 0.51);
+    -moz-box-shadow: 13px 8px 21px 1px rgba(0, 0, 0, 0.51);
+    box-shadow: 13px 8px 21px 1px rgba(0, 0, 0, 0.51);
+}
+
+.right button:nth-child(4):hover {
+    background: #00fff2;
+    color: #ffffff;
+    font-size: 18px;
+}
+
+
 .right p {
     color: #ffff;
     background-color: rgba(128, 128, 128, 0.715);

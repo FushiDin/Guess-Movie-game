@@ -44,48 +44,52 @@ function FilmListPageDesc() {
 
     return (
         <div className={styles.wrapper}>
-            {open ? (
-                <>
-                    <input type="text"
-                        placeholder={film.name}
-                        ref={nameRef}
-                        onChange={onChangeInputs}
-                    />
+
+            {open ?
+                (
+                    <>
+                        <input type="text"
+                            placeholder={film.name}
+                            ref={nameRef}
+                            onChange={onChangeInputs}
+                        />
 
 
-                    <input type="text"
-                        placeholder={film.description}
-                        ref={descRef}
-                        onChange={onChangeInputs}
-                    />
-                    <div className={styles.buttons}>
-                        <button onClick={() => setOpen(false)}>Отмена</button>
-                        <button onClick={putHandler}>Сохранить</button>
-                    </div>
-                </>
-            )
+                        <input type="text"
+                            placeholder={film.description}
+                            ref={descRef}
+                            onChange={onChangeInputs}
+                        />
+                        <div className={styles.buttons}>
+                            <button onClick={() => setOpen(false)}>Отмена</button>
+                            <button onClick={putHandler}>Сохранить</button>
+                        </div>
+                    </>
+                )
                 :
                 (
 
                     <div className={styles.NameDesc}>
                         {film ? <h1>{film.name}</h1>
                             : <p>Загрузка...</p>}
-                        {film ? <p>{film.desc}</p>
+                        {film ? <p>{film.description}</p>
                             : <p>Загрузка...</p>}
                         <Link to={'/list'}>Назад</Link>
 
                         <div className={styles.buttons}>
-                            <button onClick={() => setVisible(false)}>Удалить</button>
+                            <button onClick={() => setVisible(true)}>Удалить</button>
                             <button onClick={() => setOpen(true)}>Редактировать</button>
                         </div>
                     </div>
-                )
-            }
-            {film && (
+                )}
+                {
+                    
+                }
+            {film &&  (
                 <ModalDelete
                     name={film.name}
                     visible={visible}
-                    onCenel={() => setVisible(true)}
+                    onCenel={() => setVisible(false)}
                     id={film.id}
                 />
             )}
